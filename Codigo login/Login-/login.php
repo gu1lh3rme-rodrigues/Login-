@@ -11,8 +11,8 @@
                 $user = $_POST['user'];
                 $senha = $_POST['senha'];
 
-                $user_correta_hash = md5("ds");
-                $senha_correta_hash = md5("123");
+                $user_correta_hash = md5("ds12");
+                $senha_correta_hash = md5("321");
 
                 if (md5($user) == $user_correta_hash && md5($senha) == $senha_correta_hash) {
                     header("Location: index_array.php");
